@@ -16,8 +16,8 @@ import Grid from "@mui/material/Grid";
 const Background = styled(Box)(({ theme }) => ({
   background: `linear-gradient(135deg, #cce3f5 0%, #fce1e4 100%)`,
   minHeight: "100vh",
-  paddingTop: theme.spacing(8),
-  paddingBottom: theme.spacing(8),
+  paddingTop: theme.spacing(2),
+  paddingBottom: theme.spacing(2),
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
@@ -26,7 +26,7 @@ const Background = styled(Box)(({ theme }) => ({
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: "#fff",
   ...theme.typography.body2,
-  padding: theme.spacing(5),
+  padding: theme.spacing(3),
   textAlign: "left",
   color: theme.palette.text.primary,
   borderRadius: theme.shape.borderRadius * 2,
@@ -63,7 +63,7 @@ export default function WholesaleFormGrid() {
   return (
     <Background>
       <Container maxWidth="md">
-        <Grid component="div" container spacing={6}>
+        <Grid component="div" container spacing={2}>
           {/* Ліва частина — текст */}
           <Grid component="div" size={{ xs: 12, md: 6 }}>
             <Item>
