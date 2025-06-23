@@ -68,9 +68,13 @@ export default function WholesaleFormGrid() {
           <Grid component="div" size={{ xs: 12, md: 6 }}>
             <Item>
               <Typography
-                variant="h4"
                 gutterBottom
-                sx={{ fontWeight: "bold", mb: 2, textAlign: "center" }}
+                sx={{
+                  fontWeight: "bold",
+                  mb: 2,
+                  textAlign: "center",
+                  fontSize: 28,
+                }}
               >
                 Оптова спiвпраця з <br />
                 <HighlightedCompany>Alberto Bini</HighlightedCompany>
