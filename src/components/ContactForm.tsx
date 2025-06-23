@@ -145,7 +145,7 @@ export default function WholesaleFormGrid() {
                     required
                   />
                 </Grid>
-                <Grid component="div" size={12}>
+                {/* <Grid component="div" size={12}>
                   <TextField
                     fullWidth
                     multiline
@@ -155,7 +155,7 @@ export default function WholesaleFormGrid() {
                     value={form.message}
                     onChange={handleChange}
                   />
-                </Grid>
+                </Grid> */}
                 <Grid component="div" size={12}>
                   <Button
                     type="submit"
