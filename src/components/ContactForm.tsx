@@ -26,7 +26,7 @@ const Background = styled(Box)(({ theme }) => ({
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: "#fff",
   ...theme.typography.body2,
-  padding: theme.spacing(3),
+  padding: theme.spacing(4),
   textAlign: "left",
   color: theme.palette.text.primary,
   borderRadius: theme.shape.borderRadius * 2,
@@ -70,9 +70,9 @@ export default function WholesaleFormGrid() {
               <Typography
                 variant="h4"
                 gutterBottom
-                sx={{ fontWeight: "bold", mb: 2 }}
+                sx={{ fontWeight: "bold", mb: 2, textAlign: "center" }}
               >
-                Оптові спiвпраця з{" "}
+                Оптова спiвпраця з <br />
                 <HighlightedCompany>Alberto Bini</HighlightedCompany>
               </Typography>
               <Typography
@@ -145,7 +145,7 @@ export default function WholesaleFormGrid() {
                   <TextField
                     fullWidth
                     multiline
-                    rows={4}
+                    rows={2}
                     label="Коментар (необов’язково)"
                     name="message"
                     value={form.message}
